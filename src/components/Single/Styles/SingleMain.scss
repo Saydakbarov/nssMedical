@@ -1,0 +1,34 @@
+.doctorBox {
+    position: relative;
+    &:hover {
+      .hoverBox {
+        display: block;
+        transition: all 0.4s ease-in;
+      }
+      .textBox {
+        display: block;
+      }
+    }
+  
+    .hoverBox {
+      width: 91%;
+      transition: all 0.4s ease;
+      position: absolute;
+      display: none;
+      top: 2%;
+      background-color: black;
+      opacity: 0.5;
+  
+      height: 400px;
+      color: #fff;
+    }
+    .textBox {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      font-weight: bolder;
+      color: #fff;
+    }
+  }
+  

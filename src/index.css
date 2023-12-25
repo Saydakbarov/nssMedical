@@ -1,0 +1,12 @@
+p{
+    font-family: "Figtree", sans-serif !important;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.globalContainer{
+    max-width: 1670px;
+    margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+.block {
+  transition: all 0.5s linear;
+
+  .boxTitle {
+    padding: 10px;
+  }
+
+  &:hover {
+    .boxTitle {
+      background-color: #cce4f7;
+      border-radius: 10px;
+      transform: scale(1.4);
+      transition: all 0.5s linear;
+    }
+  }
+}
