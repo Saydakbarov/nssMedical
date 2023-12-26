@@ -45,6 +45,8 @@ export default function Footer({ lang }) {
     api.send();
     phone.value = "";
     name.value = "";
+
+    navigate("/answerVacancy");
   };
   return (
     <Box
@@ -202,6 +204,7 @@ export default function Footer({ lang }) {
               label="Номер телефона"
               variant="outlined"
               name="phone"
+              required
             />
 
             <Button

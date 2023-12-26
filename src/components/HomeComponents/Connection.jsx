@@ -7,7 +7,7 @@ import Modal from "@mui/material/Modal";
 import ConnectionImg from "../../images/homepageImages/connection.jpg";
 import { IconButton, TextField } from "@mui/material";
 import { ArrowRightAlt, Close } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const style = {
   position: "absolute",
@@ -28,6 +28,8 @@ export default function Connection({ text, sx }) {
 
   // const [phone, setPhone] = useState();
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const { phone, name } = e.target.elements;
@@ -45,6 +47,7 @@ export default function Connection({ text, sx }) {
     api.open("GET", url, true);
     api.send();
     handleClose();
+    navigate("/answerVacancy");
   };
 
   return (

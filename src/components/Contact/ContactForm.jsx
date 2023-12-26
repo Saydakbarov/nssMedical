@@ -1,8 +1,10 @@
 import { ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactForm() {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const { phone, name, description } = e.target.elements;
@@ -23,6 +25,8 @@ export default function ContactForm() {
     phone.value = "";
     name.value = "";
     description.value = "";
+
+    navigate("/answerVacancy");
   };
   return (
     <Box
@@ -30,7 +34,7 @@ export default function ContactForm() {
         zIndex: 20,
         position: "relative",
         p: 2,
-        mt:10
+        mt: 10,
       }}
     >
       <Container
@@ -117,7 +121,7 @@ export default function ContactForm() {
               }}
               variant="contained"
             >
-               Отправить
+              Отправить
             </Button>
           </Box>
         </Box>

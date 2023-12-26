@@ -1,9 +1,12 @@
 import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import About2 from "../../images/AboutPage/about2.jpg";
 
 export default function FormComp({ lang }) {
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const { phone, name } = e.target.elements;
@@ -23,6 +26,8 @@ export default function FormComp({ lang }) {
 
     phone.value = "";
     name.value = "";
+
+    navigate("/answerVacancy");
   };
   return (
     <Box
