@@ -55,7 +55,7 @@ export default function VacancyForm() {
       phone,
     } = e.target.elements;
     const token = "6779086929:AAHwJlS-gn0E-Kocv4gpXQfIyg4hR4W2Iyg";
-    const chat_id = -4005290346;
+    const chat_id = -1002024050958;
     let text = "";
 
     text =
