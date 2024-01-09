@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Suspense, lazy, useEffect, useState } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Suspense, lazy, useState } from "react";
 
 // import HomePage from "./pages/HomePage";
 // import AboutPage from "./pages/AboutPage";
@@ -10,16 +10,18 @@ import Loader from "./components/Loader/Loader";
 // import ServicePage from "./pages/ServicePage";
 // import SinglePage from "./pages/SinglePage";
 
-import HomeAboutVideo from "./images/homepageImages/HomeAboutvideo.mp4";
+// import HomeAboutVideo from "./images/homepageImages/HomeAboutvideo.mp4";
 import Departments from "./pages/Departments";
 import Doctors from "./pages/Doctors";
 import TrainingPage from "./pages/TrainingPage";
 import ThankYou from "./components/ThankYou";
 
+import BackgroundImage from "./images/background.jpg";
+
 function App() {
   const HomePage = lazy(() => import("./pages/HomePage"));
   const AboutPage = lazy(() => import("./pages/AboutPage"));
-  const BlogPage = lazy(() => import("./pages/BlogPage"));
+  // const BlogPage = lazy(() => import("./pages/BlogPage"));
   const ContactPage = lazy(() => import("./pages/ContactPage"));
   // const Loader = lazy(() => import("./components/Loader/Loader"));
   const Vacancy = lazy(() => import("./pages/Vacancy"));
@@ -39,7 +41,7 @@ function App() {
   // }, []);
   return (
     <div className="App ">
-      <video
+      {/* <video
         style={{
           minHeight: "100%",
           minWidth: "100%",
@@ -54,7 +56,19 @@ function App() {
         loop
       >
         <source src={HomeAboutVideo} type="video/mp4" />
-      </video>
+      </video> */}
+      <img
+        style={{
+          minHeight: "100%",
+          minWidth: "100%",
+          position: "fixed",
+          right: 0,
+          bottom: 0,
+          zIndex: "-99",
+        }}
+        src={BackgroundImage}
+        alt=""
+      />
       <BrowserRouter>
         <>
           <Routes>
@@ -141,14 +155,7 @@ function App() {
               }
             />
 
-            <Route
-              path="*"
-              element={
-                <Suspense fallback={<Loader />}>
-                  <HomePage lang={lang} setLang={setLang} />
-                </Suspense>
-              }
-            />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </>
       </BrowserRouter>
