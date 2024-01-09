@@ -140,6 +140,15 @@ function App() {
                 </Suspense>
               }
             />
+
+            <Route
+              path="*"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <HomePage lang={lang} setLang={setLang} />
+                </Suspense>
+              }
+            />
           </Routes>
         </>
       </BrowserRouter>
