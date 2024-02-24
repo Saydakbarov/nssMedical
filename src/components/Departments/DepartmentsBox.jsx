@@ -90,6 +90,7 @@ export default function DepartmentsBox() {
             >
               {v.Images.map((img, i) => (
                 <img
+                key={i}
                   style={{
                     width: "auto",
                     height: "300px",

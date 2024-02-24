@@ -104,6 +104,7 @@ export default function SingletMain({ id, lang }) {
             >
               {data?.img?.map((v, i) => (
                 <Box
+                  key={i}
                   sx={{
                     height: { xs: "300px", sm: "400px", md: "600px" },
                     width:

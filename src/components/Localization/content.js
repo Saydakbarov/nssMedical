@@ -22,6 +22,8 @@ import maloxat from "../../images/TeamImage/maloxat.png";
 import abdujalol from "../../images/TeamImage/abdujalol.png";
 import landish from "../../images/TeamImage/landish.png";
 import nozima from "../../images/TeamImage/nozima.png";
+import laziza from "../../images/TeamImage/Laziza.png";
+import nargiza from "../../images/TeamImage/nargiza.png";
 
 import plasticeskiyXirurg from "../../images/CategoryImage/plasticeskiyXirurgiya.png";
 import Xirurg from "../../images/CategoryImage/xirurg.jpg";
@@ -703,6 +705,20 @@ const content = {
                 name: "Исанбаева Ландыш Мухаммедовна",
                 job: "Гинеколог",
                 category: "Oliy toifali shifokor",
+                experience: "",
+              },
+              {
+                img: laziza,
+                name: "Ro'ziyeva Laziza Fazliddinova",
+                job: "Akusher-ginekolog",
+                category: "",
+                experience: "",
+              },
+              {
+                img: nargiza,
+                name: "Jalilova Nargiza Maxkamovna",
+                job: "Akusher-ginekolog",
+                category: "",
                 experience: "",
               },
             ],
@@ -1588,6 +1604,20 @@ const content = {
                 name: "Исанбаева Ландыш Мухаммедовна",
                 job: "Гинеколог",
                 category: "Врач высшей категории",
+                experience: "",
+              },
+              {
+                img: laziza,
+                name: "Рузиева Лазиза Фазлиддиновна ",
+                job: "акушер - гинеколог ",
+                category: "",
+                experience: "",
+              },
+              {
+                img: nargiza,
+                name: "Джалилова Наргиза Махкамовна  ",
+                job: "акушер - гинеколог ",
+                category: "",
                 experience: "",
               },
             ],
