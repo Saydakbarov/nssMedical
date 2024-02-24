@@ -55,21 +55,15 @@ import Carousel11 from "../../images/homepageImages/HeaderCarousel/img11.png";
 import Carousel12 from "../../images/homepageImages/HeaderCarousel/img12.png";
 import Carousel13 from "../../images/homepageImages/HeaderCarousel/img13.png";
 
-import ServiceUrolog2 from "../../images/service/urologiya/img2.jpg";
 import ServiceUrolog1 from "../../images/service/urologiya/img1.png";
-import ServiceKosmetolog2 from "../../images/service/kosmetologiya/img2.jpg";
 import ServiceKordiologiya2 from "../../images/service/kordiologiya/img2.jpg";
 
-import ServiceUzd2 from "../../images/service/uzd/img2.png";
 import ServiceDermatologiya2 from "../../images/departments/poliknika/poliknika8.jpg";
 import ServiceDermatologiya1 from "../../images/departments/poliknika/poliknika9.jpg";
 import ServiceDermatologiya3 from "../../images/service/dermatologiya/img1.jpg";
 import ServiceDermatologiya4 from "../../images/service/dermatologiya/img2.jpg";
 import ServiceNevropotolog2 from "../../images/service/nevrologiya/img2.jpg";
 import ServiceTerapiya2 from "../../images/service/terapiya/img2.jpg";
-import ServiceLabaratoriya2 from "../../images/service/labaratoriya/img2.jpg";
-import ServiceOperatsiya2 from "../../images/service/operatsiya/img2.jpg";
-import ServiceOperatsiya1 from "../../images/service/operatsiya/img1.jpg";
 import ServiceIntensivnaya2 from "../../images/service/intensivnaya/img1.jpg";
 import ServiceXirurgiya from "../../images/service/xirurgiya/img1.png";
 import ServicePlasticeskiy from "../../images/service/plasticeskiy/img1.png";
@@ -90,7 +84,6 @@ import Operatsiya3 from "../../images/departments/operatsiya/operatsiya3.jpg";
 import Operatsiya4 from "../../images/departments/operatsiya/operatsiya4.jpg";
 import Operatsiya5 from "../../images/departments/operatsiya/operatsiya5.jpg";
 import Operatsiya9 from "../../images/departments/operatsiya/operatsiya9.jpg";
-import Operatsiya13 from "../../images/departments/operatsiya/operatsiya13.jpg";
 
 import Poliknika5 from "../../images/departments/poliknika/poliknika5.jpg";
 import Poliknika6 from "../../images/departments/poliknika/poliknika6.jpg";

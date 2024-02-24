@@ -5,7 +5,6 @@ import content from "../Localization/content";
 import { useNavigate } from "react-router-dom";
 
 import HomeAboutImg from "../../images/homepageImages/HomeAbout.jpg";
-import HomeAboutVideo from "../../images/homepageImages/HomeAboutvideo.mp4";
 
 export default function HomeAbout({ lang }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +34,9 @@ export default function HomeAbout({ lang }) {
           sm={10}
           xs={11}
           sx={{ position: "relative" }}
-          className={`block animate__animated ${isVisible ? "animate__fadeInLeft" : ''} `}
+          className={`block animate__animated ${
+            isVisible ? "animate__fadeInLeft" : ""
+          } `}
         >
           <Box sx={{ width: "90%" }}>
             <img
